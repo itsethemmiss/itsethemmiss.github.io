@@ -36,7 +36,8 @@
   </style>
 </head>
 
-<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen transition-colors duration-300 font-google">
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen flex flex-col transition-colors duration-300 font-google">
+
   <!-- Navigation -->
   <nav class="bg-white dark:bg-gray-800 shadow-lg sticky top-0 z-50 transition-colors duration-300">
     <div class="max-w-6xl mx-auto px-4">
@@ -52,8 +53,7 @@
           <button onclick="showPage('team')" class="nav-link font-light text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">Team</button>
           <button onclick="showPage('contact')" class="nav-link font-light text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">Contact</button>
           <a href="https://github.com/itsethemmiss" target="_blank" class="flex items-center bg-primary text-white px-4 py-2 rounded hover:bg-primaryHover transition">
-<img src="assets/images/github.svg" alt="GitHub" class="w-5 h-5 mr-1">
-
+            <img src="assets/images/github.svg" alt="GitHub" class="w-5 h-5 mr-1">
             Github
           </a>
         </div>
@@ -66,102 +66,108 @@
     </div>
   </nav>
 
-  <!-- Home -->
-  <div id="home" class="page-section active">
-    <section class="py-20 text-center">
-      <h2 class="text-6xl font-extrabold mb-6">Welcome to Its Ethem Miss</h2>
-      <p class="text-xl font-light mb-8 max-w-3xl mx-auto">Innovating the future through solutions called its ethem miss</p>
-      <button onclick="showPage('projects')" class="bg-primary text-white px-8 py-3 rounded font-medium hover:bg-primaryHover transition text-lg">
-        View Our Projects
-      </button>
-    </section>
-  </div>
+  <!-- Main Content Wrapper -->
+  <main class="flex-grow">
 
-  <!-- About -->
-  <div id="about" class="page-section">
-    <section class="py-16">
-      <div class="max-w-4xl mx-auto px-4">
-        <h2 class="text-4xl font-extrabold text-center mb-12">About Its Ethem Miss</h2>
-        <p class="text-lg font-light mb-6">Its Ethem Miss is a forward-thinking organization dedicated to creating innovative solutions that are its ethe miss-related. This started out when all my teachers got my name wrong, so i kept on saying its ethem miss or its ethem sir. This then became a funny joke, then a full organisation</p>
-      </div>
-    </section>
-  </div>
-
-  <!-- Projects -->
-  <div id="projects" class="page-section">
-    <section class="py-16">
-      <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-4xl font-extrabold text-center mb-12">Our Projects</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Example project -->
-          <div class="project-card bg-white dark:bg-gray-800 rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 hover:shadow-md">
-  <img src="assets/images/project.png" alt="Project" class="w-full h-48 object-cover border-b border-gray-200 dark:border-gray-700">
-  <div class="p-6">
-    <h3 class="text-xl font-extrabold mb-3">Project Example</h3>
-    <p class="font-light text-gray-600 dark:text-gray-300 mb-4">An innovative concept designed to showcase the best of our creative work.</p>
-    
-    <!-- Buttons -->
-    <div class="flex gap-4">
-      <a href="#" class="flex items-center justify-center gap-2 px-4 py-2 bg-gray-900 text-white rounded hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-600">
-        <img src="assets/images/github.svg" alt="GitHub" class="w-5 h-5">
-        Github
-      </a>
-      <a href="#" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-gray-900 dark:bg-gray-500 dark:hover:bg-gray-600">
-        Demo
-      </a>
+    <!-- Home -->
+    <div id="home" class="page-section active">
+      <section class="py-20 text-center">
+        <h2 class="text-6xl font-extrabold mb-6">Welcome to Its Ethem Miss</h2>
+        <p class="text-xl font-light mb-8 max-w-3xl mx-auto">Innovating the future through solutions called its ethem miss</p>
+        <button onclick="showPage('projects')" class="bg-primary text-white px-8 py-3 rounded font-medium hover:bg-primaryHover transition text-lg">
+          View Our Projects
+        </button>
+      </section>
     </div>
-  </div>
-</div>
 
+    <!-- About -->
+    <div id="about" class="page-section">
+      <section class="py-16">
+        <div class="max-w-4xl mx-auto px-4">
+          <h2 class="text-4xl font-extrabold text-center mb-12">About Its Ethem Miss</h2>
+          <p class="text-lg font-light mb-6">Its Ethem Miss is a forward-thinking organization dedicated to creating innovative solutions that are its ethe miss-related. This started out when all my teachers got my name wrong, so i kept on saying its ethem miss or its ethem sir. This then became a funny joke, then a full organisation</p>
         </div>
-      </div>
-    </section>
-  </div>
+      </section>
+    </div>
 
-  <!-- Team -->
-  <div id="team" class="page-section">
-    <section class="py-16">
-      <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-4xl font-extrabold text-center mb-12">Our Team</h2>
-        <div class="grid md:grid-cols-3 gap-10 text-center">
-          <!-- Ethem -->
-          <div>
-            <img src="assets/images/1.png" class="w-32 h-32 mx-auto rounded-full mb-4" alt="Ethem">
-            <h3 class="text-2xl font-extrabold">Ethem Beldagli</h3>
-            <div class="flex justify-center space-x-3 mt-3">
-              <a href="https://github.com/fdsfasdf2314" target="_blank" class="flex items-center text-gray-600 hover:text-primary">
+    <!-- Projects -->
+    <div id="projects" class="page-section">
+      <section class="py-16">
+        <div class="max-w-6xl mx-auto px-4">
+          <h2 class="text-4xl font-extrabold text-center mb-12">Our Projects</h2>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Example project -->
+            <div class="project-card bg-white dark:bg-gray-800 rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 hover:shadow-md">
+              <img src="assets/images/project.png" alt="Project" class="w-full h-48 object-cover border-b border-gray-200 dark:border-gray-700">
+              <div class="p-6">
+                <h3 class="text-xl font-extrabold mb-3">Project Example</h3>
+                <p class="font-light text-gray-600 dark:text-gray-300 mb-4">An innovative concept designed to showcase the best of our creative work.</p>
+
+                <!-- Buttons -->
+                <div class="flex gap-4">
+                  <a href="#" class="flex items-center justify-center gap-2 px-4 py-2 bg-gray-900 text-white rounded hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-600">
+                    <img src="assets/images/github.svg" alt="GitHub" class="w-5 h-5">
+                    Github
+                  </a>
+                  <a href="#" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-gray-900 dark:bg-gray-500 dark:hover:bg-gray-600">
+                    Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Team -->
+    <div id="team" class="page-section">
+      <section class="py-16">
+        <div class="max-w-6xl mx-auto px-4">
+          <h2 class="text-4xl font-extrabold text-center mb-12">Our Team</h2>
+          <div class="grid md:grid-cols-3 gap-10 text-center">
+            <!-- Ethem -->
+            <div>
+              <img src="assets/images/1.png" class="w-32 h-32 mx-auto rounded-full mb-4" alt="Ethem">
+              <h3 class="text-2xl font-extrabold">Ethem Beldagli</h3>
+              <div class="flex justify-center space-x-3 mt-3">
+                <a href="https://github.com/fdsfasdf2314" target="_blank" class="flex items-center text-gray-600 hover:text-primary">
+                  <img src="assets/images/github.svg" alt="GitHub" class="w-5 h-5 mr-1">
+                  fdsfasdf2314
+                </a>
+                <a href="https://github.com/ggsuii99" target="_blank" class="flex items-center text-gray-600 hover:text-primary">
+                  <img src="assets/images/github.svg" alt="GitHub" class="w-5 h-5 mr-1">
+                  ggsuii99
+                </a>
+              </div>
+            </div>
+            <!-- James -->
+            <div>
+              <img src="assets/images/2.png" class="w-32 h-32 mx-auto rounded-full mb-4" alt="James">
+              <h3 class="text-2xl font-extrabold">James Davies</h3>
+              <a href="https://github.com/7aimez" target="_blank" class="flex justify-center items-center mt-3 text-gray-600 hover:text-primary">
                 <img src="assets/images/github.svg" alt="GitHub" class="w-5 h-5 mr-1">
-fdsfasdf2314
+                7aimez
               </a>
-              <a href="https://github.com/ggsuii99" target="_blank" class="flex items-center text-gray-600 hover:text-primary">
+            </div>
+            <!-- Aarav -->
+            <div>
+              <img src="assets/images/3.png" class="w-32 h-32 mx-auto rounded-full mb-4" alt="Aarav">
+              <h3 class="text-2xl font-extrabold">Aarav Jajoo</h3>
+              <a href="https://github.com/aaravgamin26" target="_blank" class="flex justify-center items-center mt-3 text-gray-600 hover:text-primary">
                 <img src="assets/images/github.svg" alt="GitHub" class="w-5 h-5 mr-1">
-ggsuii99
+                aaravgamin26
               </a>
             </div>
           </div>
-          <!-- James -->
-          <div>
-            <img src="assets/images/2.png" class="w-32 h-32 mx-auto rounded-full mb-4" alt="James">
-            <h3 class="text-2xl font-extrabold">James Davies</h3>
-            <a href="https://github.com/7aimez" target="_blank" class="flex justify-center items-center mt-3 text-gray-600 hover:text-primary">
-              <img src="assets/images/github.svg" alt="GitHub" class="w-5 h-5 mr-1">
-7aimez
-            </a>
-          </div>
-          <!-- Aarav -->
-          <div>
-            <img src="assets/images/3.png" class="w-32 h-32 mx-auto rounded-full mb-4" alt="Aarav">
-            <h3 class="text-2xl font-extrabold">Aarav Jajoo</h3>
-            <a href="https://github.com/aaravgamin26" target="_blank" class="flex justify-center items-center mt-3 text-gray-600 hover:text-primary">
-              <img src="assets/images/github.svg" alt="GitHub" class="w-5 h-5 mr-1">
-aaravgamin26
-            </a>
-          </div>
         </div>
-      </div>
-    </section>
-  </div>
+      </section>
+    </div>
 
+  </main>
+
+  <!-- Footer -->
   <footer class="bg-gray-800 text-white text-center py-6">
     <p>&copy; 2025 Its Ethem Miss. All rights reserved.</p>
   </footer>
